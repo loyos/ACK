@@ -1,7 +1,7 @@
 Ack Web Design
 =======
 
-(http://www.happyhacking.com.ar/media/static/imagenes/ack_ampliado.jpg) 
+![CakePHP](http://www.happyhacking.com.ar/media/static/imagenes/ack_ampliado.jpg) 
 
 Ack Web Desing, get your web software now!
 
