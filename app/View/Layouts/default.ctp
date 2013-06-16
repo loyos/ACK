@@ -50,12 +50,12 @@ $cakeDescription = "Ack Web Design";
 		</div>
 		<div class= "subtitle">
 		</div>
+		<div class= "logo"></div>
 		<div id="header">
 			<div class= "menu">
 				<ul>
 					<li name = "home"><?php echo $this->Html->link('HOME', '#') ?> </li>
-					<li name = "works" style= "background: none;"><?php echo $this->Html->link('PORTAFOLIO', '#') ?> </li>
-					<li class= "logo"></li>
+					<li name = "works" style= "background: none; margin-right: 350px;"><?php echo $this->Html->link('PORTAFOLIO', '#') ?> </li>
 					<li name = "studio"> <?php echo $this->Html->link('ESTUDIO', '#') ?> </li>
 					<li name = "contact" style= "background: none;"> <?php echo $this->Html->link('CONTACTO', '#') ?> </li>
 				</ul>
