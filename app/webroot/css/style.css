@@ -18,7 +18,7 @@ body {
 
 .menu ul {
 	position: relative;
-	top: -80px;
+	top: -90px;
 	z-index: 0;
 }
 
@@ -85,23 +85,86 @@ body {
 	left: 800px;
 	background: url(../img/page_loader_bg.jpg);
 	width: 1250px;
-	height: 400px;
+	height: 370px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0px;
 	display: none;
 	opacity: 0;
-	top: 30px;
+	top: 60px;
 	clear: both;
-	height: 320px;
+	border-radius: 10px;
 }
 
 .wrap p {
 	color: white;
 }
 
+.subwrap {
+	float: left;
+	height: 320px;
+	width: 281px;
+	padding: 10px;
+	padding-top:30px;
+	padding-left: 20px;
+	/* border: 1px solid white; */
+}
+
+.news {
+	margin-top: 35px;
+}
+
+.news_title{
+	color: white;
+	font: 20px 'Contrail One';
+}
+
+.subwrap .title{
+	font: 30px 'Contrail One';
+	margin-left: 0px;
+}
+
+.subwrap p{
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	line-height: 15px;
+	color: #FFF;
+	text-align: justify;
+}
+
+.subwrap p i {
+	color: #ffb6aa;
+}
+
+.subwrap ul {
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	color: #FFF;
+	line-height: 20px;
+	font-style: italic;
+}
+
+.collage{
+	margin-top: 30px;
+	/*background: url(../img/list_bg.jpg); */
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.collage table{
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.collage table td{
+	padding: 0;
+	margin: 0;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
 .index{
 	overflow: hidden;
-	height: 350px;
+	height: 430px;
 	display: none;
 }
