@@ -94,10 +94,23 @@
 			</div>
 		</div>
 </div>
+
 <script>
+$('.menu li a').hover(
+	function () {
+		$(this).animate({'color': '#D33D2C'}, 200, "easeOutCirc");	
+  },
+	function () {
+		$(this).animate({'color': 'white'}, 200, "easeOutCirc");
+	}
+);
 
 $('.menu li').click(
 			function (){
+				// $('.menu li a').css('color', 'white');
+				// console.debug($(this).find('a').css('color', '#D33D2C'));
+				$(this).find('a').addClass('selected');
+				console.debug($(this).find('a'));
 				$(".logo_text").slideUp("slow");
 				if ($(".index").is(":hidden")) {
 					$(".index").show("slow");
@@ -105,7 +118,6 @@ $('.menu li').click(
 				$('.wrap').animate({'marginLeft': '358px', 'opacity': 'hide'}, 200, "easeOutCirc");
 				var name= "#";
 				name= name + $(this).attr('name');
-				// alert(name);
 				$(name).animate({'display': 'show', 'marginLeft': '-470px', 'opacity': '1'}, 300, "easeOutCirc");
 			}
 		);
@@ -118,8 +130,6 @@ $('.logo').click(
 		$('.index').children().promise().done(function(){
 			$(".index").slideUp('slow');
 			$(".logo_text").slideDown("slow");
-			// $(name).animate({'display': 'show', 'marginLeft': '-470px', 'opacity': '1'}, 300, "easeOutCirc");
-			// alert("listo!");
 		})
 	}
 )		
