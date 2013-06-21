@@ -4,7 +4,7 @@
 				<div class = "title">BIENVENIDO</div>
 				<p> <?php echo $this->Html->image('loy_intro.jpg'); ?> </p>
 				<p>
-					LOY RAMÍREZ<br><br>
+					LOY RAMÍREZ LOCO<br><br>
 				<i> DESARROLLADOR DE SOFTWARE INDEPENDIENTE <br>
 					   LIC. EN COMPUTACIÓN DE LA UCV <br>
 					   MÚSICO EMPRENDEDOR <br>
