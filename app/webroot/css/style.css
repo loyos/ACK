@@ -56,6 +56,10 @@ body {
 	z-index: 1;
 }
 
+.logo:hover{
+	cursor: pointer;
+}
+
 .logo_text{
 	position: relative;
 	top: 30px;
@@ -90,7 +94,6 @@ body {
 
 .wrap{
 	position: relative;
-	left: 800px;
 	background: url(../img/page_loader_bg.jpg);
 	width: 1250px;
 	height: 370px;
@@ -103,6 +106,12 @@ body {
 	clear: both;
 	border-radius: 10px;
 }
+
+.menu ul li:hover {
+	cursor: pointer;
+}
+
+
 
 .wrap p {
 	color: white;
@@ -175,4 +184,5 @@ body {
 	overflow: hidden;
 	height: 430px;
 	display: none;
+	width: 100%;
 }

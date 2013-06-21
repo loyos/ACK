@@ -109,22 +109,27 @@ $('.menu li').click(
 			function (){
 				// $('.menu li a').css('color', 'white');
 				// console.debug($(this).find('a').css('color', '#D33D2C'));
-				$(this).find('a').addClass('selected');
-				console.debug($(this).find('a'));
+				// $(this).find('a').addClass('selected');
+				// console.debug($(this).find('a'));
 				$(".logo_text").slideUp("slow");
 				if ($(".index").is(":hidden")) {
 					$(".index").show("slow");
-				}
-				$('.wrap').animate({'marginLeft': '358px', 'opacity': 'hide'}, 200, "easeOutCirc");
+				}								
+				if ($(".wrap").is(":visible")) {
+					$('.wrap').animate({'left': '300px', 'opacity': 'hide'}, 200, "easeOutCirc", function(){
+						// $('.wrap').css("margin-left", "auto");
+					});
+				}				
 				var name= "#";
 				name= name + $(this).attr('name');
-				$(name).animate({'display': 'show', 'marginLeft': '-470px', 'opacity': '1'}, 300, "easeOutCirc");
+				$(name).animate({'display': 'show', 'marginLeft': '50%', 'left':  -$('.wrap').width()/2, 'opacity': '1'}, 500, "easeOutCirc");
 			}
 		);
 		
 $('.logo').click(
 	function prueba(){
-		$('.index').children().animate({'marginLeft': '358px', 'opacity': '0'}, 200, "easeOutCirc", function(){
+		$('.index').children().animate({ 'opacity': '0'}, 200, "easeOutCirc", function(){
+		$('.wrap').css( "margin-left", "auto" );
 			}
 		);
 		$('.index').children().promise().done(function(){
