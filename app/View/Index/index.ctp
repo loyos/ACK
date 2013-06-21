@@ -96,7 +96,7 @@
 </div>
 
 <script>
-$('.menu li a').hover(
+$('.menu li').hover(
 	function () {
 		$(this).animate({'color': '#D33D2C'}, 200, "easeOutCirc");	
   },
