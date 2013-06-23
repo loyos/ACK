@@ -18,7 +18,7 @@ body {
 
 .menu ul {
 	position: relative;
-	top: -90px;
+	top: -120px;
 	z-index: 0;
 }
 
@@ -50,7 +50,7 @@ body {
 	height: 150px;
 	width: 350px;
 	position: relative;
-	top: 40px;
+	top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 1;
@@ -62,18 +62,18 @@ body {
 
 .logo_text{
 	position: relative;
-	top: 30px;
 	background-image: url('../img/logo_text.png');
 	background-repeat: no-repeat;
 	height: 170px;
 	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 30px;
 }
 
 .subtitle {
 	position: relative;
-	top: 50px;
+	top: 30px;
 	background: url(../img/subtitle.png) right center no-repeat;
 	height: 60px;
 	width: 142px;
@@ -83,13 +83,14 @@ body {
 
 .social_network li{
 	display: inline-block;
+	clear: both;
 }
 
 .social_network {
 	width: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .wrap{
@@ -102,7 +103,7 @@ body {
 	margin-top: 0px;
 	display: none;
 	opacity: 0;
-	top: 60px;
+	top: 5px;
 	clear: both;
 	border-radius: 10px;
 }

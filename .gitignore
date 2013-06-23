@@ -5,6 +5,7 @@
 /dist
 .DS_Store
 /tags
+/tmp/cache/persistent/*
 =======
 #################
 ## Eclipse
