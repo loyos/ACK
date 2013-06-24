@@ -65,6 +65,10 @@
 				<div class = "title">NOTICIAS</div>
 			</div>
 		</div>
+		
+			<!-- ............................................................................................................ -->
+			
+			
 		<div id = "studio" class = "wrap" style = "color: white;">
 			<div class = "subwrap">
 				<div class = "title">BIENVENIDO</div>
@@ -79,6 +83,9 @@
 				<div class = "title">NOTICIAS</div>
 			</div>
 		</div>
+		
+			<!-- ............................................................................................................ -->
+		
 		<div id = "contact" class = "wrap" style = "color: white;">
 			<div class = "subwrap">
 				<div class = "title">BIENVENIDO</div>
