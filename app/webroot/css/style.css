@@ -116,6 +116,37 @@ body {
 	color: white;
 }
 
+.fright {
+	float: right;
+	clear: right;
+}
+
+.fleft {
+	float: left;
+}
+
+.cboth{
+	clear: both;
+}
+
+.contact_form {
+	padding: 30px;
+}
+
+.midwrap {
+	width: 45%;
+	height: 90%;
+/*	border: 1px solid white; */
+	float: left;
+	padding-top:30px;
+	padding-left: 20px;
+}
+
+.midwrap .title{
+	font: 30px 'Contrail One';
+	margin-left: 0px;
+}
+
 .subwrap {
 	float: left;
 	height: 320px;
@@ -124,6 +155,73 @@ body {
 	padding-top:30px;
 	padding-left: 20px;
 	/* border: 1px solid white; */
+}
+
+.text label{
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	line-height: 16px;
+	color: #ffb6aa;
+	font-style: italic;
+}
+
+.textarea label{
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	line-height: 16px;
+	color: #ffb6aa;
+	font-style: italic;
+}
+
+.foto_contacto{
+	float: left;
+	margin-top: 20px;
+}
+
+.foto_contacto img{
+	border-radius: 10px;
+}
+
+.contacto_info{
+	margin-top: 20px;
+	padding: 10px;
+	float: right;
+	width: 240px;
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	text-transform: uppercase;
+	font-style: italic;
+	line-height: 20px;
+	color: #ffb6aa;
+}
+
+input[type=submit]{
+	background: none;
+	border: none;
+	font: 11px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	line-height: 16px;
+	color: #ffb6aa;
+	font-style: italic;
+	cursor: pointer;
+}
+
+input[type=text]{
+	border:none;
+	background-color: #eb745a;
+	color: #FFF;
+	margin-bottom: 20px;
+	height: 30px;
+	width: 200px;
+	border-radius: 4px;
+	font: 12px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	padding-left: 4px;
+}
+
+textarea{
+	border-radius: 4px;
+	border:none;
+	background-color: #eb745a;
+	color: #FFF;
+	font: 12px 'PT Sans',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	width: 250px;
+	height: 170px;
 }
 
 .news {
@@ -138,6 +236,10 @@ body {
 .subwrap .title{
 	font: 30px 'Contrail One';
 	margin-left: 0px;
+}
+
+.subwrap img{
+	border-radius: 10px;
 }
 
 .subwrap p{

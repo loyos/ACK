@@ -87,17 +87,39 @@
 			<!-- ............................................................................................................ -->
 		
 		<div id = "contact" class = "wrap" style = "color: white;">
-			<div class = "subwrap">
-				<div class = "title">BIENVENIDO</div>
+			<div class = "midwrap">
+				<div class = "title">COMUNÍCATE</div>
+				<div class = "foto_contacto">
+					<?php echo $this->Html->image('foto_contactanos.jpg', array('height' => '200px', 'width' => '300px')); ?>
+				</div>
+				<div class = "contacto_info">
+					Puedes localizarnos llamando a los teléfonos 0416-5383821 o 0414-1112233 <br>
+					O si prefieres, contáctanos llenado el formulario, responderémos tan pronto como sea posible.
+				</div>
 			</div>
-			<div class = "subwrap">
-				<div class = "title">¿POR QUÉ NOSOTROS? </div>
-			</div>
-			<div class = "subwrap">
-				<div class = "title">TRABAJOS </div>
-			</div>
-			<div class = "subwrap">
-				<div class = "title">NOTICIAS</div>
+			<div class = "midwrap">
+				<div class = "title">FORMULARIO DE CONTACTO</div>		
+				<div class = "contact_form">
+					<?php
+					
+					//echo "hola";
+						echo $this->Form->create(false, array('class' => 'a'));
+						echo "<div class = 'fleft'>";
+							echo $this->Form->input('Nombre', array ('label' => 'NOMBRE: <br>'));
+							echo $this->Form->input('Email', array ('label' => 'EMAIL: <br>'));
+							echo $this->Form->input('Teléfono', array ('label' => 'TELÉFONO: <br>'));
+						echo "</div>";
+						echo "<div class = 'fright'>";
+							echo $this->Form->input('Mensaje', array ('label' => 'MENSAJE: <br>', 'type' => 'textarea'));
+						echo "</div >";
+						echo "<div class = 'fright'>";
+							echo $this->Form->submit('ENVIAR');
+						echo "</div>";
+						echo $this->Form->end();
+					?>
+				
+				</div>
+				
 			</div>
 		</div>
 </div>
@@ -124,12 +146,14 @@ $('.menu li').click(
 				}								
 				if ($(".wrap").is(":visible")) {
 					$('.wrap').animate({'left': '300px', 'opacity': 'hide'}, 200, "easeOutCirc", function(){
-						// $('.wrap').css("margin-left", "auto");
+						$('.wrap').css("opacity", "0");
 					});
-				}				
+				}		
 				var name= "#";
 				name= name + $(this).attr('name');
-				$(name).animate({'display': 'show', 'marginLeft': '50%', 'left':  -$('.wrap').width()/2, 'opacity': '1'}, 500, "easeOutCirc");
+				$('.wrap').promise().done(function(){
+					$(name).animate({'display': 'show', 'marginLeft': '50%', 'left':  -$('.wrap').width()/2, 'opacity': '1'}, 500, "easeOutCirc");
+				});
 			}
 		);
 		
