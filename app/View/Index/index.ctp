@@ -125,20 +125,20 @@
 </div>
 
 <script>
-$('.menu li').hover(
-	function () {
-		$(this).animate({'color': '#D33D2C'}, 200, "easeOutCirc");	
-  },
-	function () {
-		$(this).animate({'color': 'white'}, 200, "easeOutCirc");
-	}
-);
+// $('.menu li').hover(
+	// function () {
+		// $(this).animate({'color': '#D33D2C'}, 200, "easeOutCirc");	
+  // },
+	// function () {
+		// $(this).animate({'color': 'white'}, 200, "easeOutCirc");
+	// }
+// );
 
-$('.menu li').click(
+$('.menu ul li').click(
 			function (){
-				// $('.menu li a').css('color', 'white');
-				// console.debug($(this).find('a').css('color', '#D33D2C'));
-				// $(this).find('a').addClass('selected');
+				
+				$('.menu ul li').removeClass('selected');
+				$(this).addClass('selected');
 				// console.debug($(this).find('a'));
 				$(".logo_text").slideUp("slow");
 				if ($(".index").is(":hidden")) {
@@ -159,6 +159,7 @@ $('.menu li').click(
 		
 $('.logo').click(
 	function prueba(){
+		$('.menu ul li').removeClass('selected');
 		$('.index').children().animate({ 'opacity': '0'}, 200, "easeOutCirc", function(){
 		$('.wrap').css( "margin-left", "auto" );
 			}
